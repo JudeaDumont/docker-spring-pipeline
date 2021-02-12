@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  simplerestcontrollertest:
+    build: ""
+    image: simplerestcontrollertest
+    ports:
+      - "127.0.0.1:8001:8001/tcp"
+    networks:
+      - frontend
+networks:
+  frontend:
