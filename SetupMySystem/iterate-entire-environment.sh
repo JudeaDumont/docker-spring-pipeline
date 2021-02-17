@@ -1,5 +1,5 @@
-set -e
-docker stop $(docker ps -q) || :
+./DockerCommands/stop-all-containers.sh
 docker system prune -a -f
 cd rest || exit
+
 ./iterate-run-tests.sh
