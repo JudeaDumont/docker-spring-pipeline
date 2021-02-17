@@ -2,6 +2,8 @@ docker-compose -f docker-compose.yml stop
 
 ../mvnw package -f pom.xml -DskipTests
 
+#todo: this needs to increment the cachebust instead of just switching it between either, the reason for this is that
+#it caches both the 1 and the 11 and then just switches between those two image layers instead of actually making a new image.
 input="Dockerfile"
 while IFS= read -r line
 do

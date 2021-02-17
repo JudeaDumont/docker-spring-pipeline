@@ -1,5 +1,6 @@
-./DockerCommands/stop-all-containers.sh
-docker system prune -a -f
-cd rest || exit
+set -e
+./DockerCommands/stop-all-business-containers.sh || :
+
+cd ../rest || exit
 
 ./iterate-run-tests.sh
