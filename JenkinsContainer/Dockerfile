@@ -11,5 +11,5 @@ RUN add-apt-repository \
 RUN apt-get update && apt-get install -y docker-ce-cli
 RUN curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose
 RUN chmod +x /usr/bin/docker-compose
-#USER jenkins
+RUN alias gsed=sed
 RUN jenkins-plugin-cli --plugins blueocean:1.24.4
