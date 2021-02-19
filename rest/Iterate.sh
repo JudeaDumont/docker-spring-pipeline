@@ -1,6 +1,6 @@
 docker-compose -f docker-compose.yml stop
 
-./mvnw package -f pom.xml -DskipTests
+./mvnw package -f pom.xml -DskipTests -q
 
 input="Dockerfile"
 
