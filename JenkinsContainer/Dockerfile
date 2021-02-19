@@ -14,6 +14,7 @@ RUN chmod +x /usr/bin/docker-compose
 
 SHELL ["/bin/bash", "-c"]
 
+#todo: remove expansion of aliases and the alias defined here if it can be safely removed.
 RUN shopt -s expand_aliases
 
 RUN echo "alias gsed=sed" >> /etc/bash.bashrc
