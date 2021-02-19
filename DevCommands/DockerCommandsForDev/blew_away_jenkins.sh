@@ -1,6 +1,3 @@
-docker logs jenkins-blueocean
+docker container exec -it jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 
-docker container exec -it jenkins-blueocean bash
-
-cat /var/jenkins_home/secrets/initialAdminPassword
-
+docker container exec -u 0 -it jenkins-blueocean bash
