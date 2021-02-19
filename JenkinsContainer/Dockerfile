@@ -16,7 +16,12 @@ SHELL ["/bin/bash", "-c"]
 
 RUN shopt -s expand_aliases
 
-RUN echo "alias gsed=sed" >> /etc/bash.bashrc
+#add shell functions
+#this one is an alias that is otherwise impossible to propogate.
+RUN echo "gsed() { \
+              sed "$@" \
+          } \
+          export -f gsed" >> /etc/bash.bashrc
 
 RUN source /etc/bash.bashrc
 
