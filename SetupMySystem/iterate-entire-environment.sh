@@ -8,8 +8,8 @@ echo '============================================='
 
 set
 set -e
-bash -i DockerCommands/stop-all-business-containers.sh || :
+source DockerCommands/stop-all-business-containers.sh
 
 cd ../rest || exit
 
-bash -i iterate-run-tests.sh
+source iterate-run-tests.sh

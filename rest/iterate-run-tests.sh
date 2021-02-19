@@ -1,4 +1,4 @@
 #!/bin/bash
-bash -i Iterate.sh
+source Iterate.sh
 cd rest-test || exit
-bash -i Iterate.sh
+source Iterate.sh

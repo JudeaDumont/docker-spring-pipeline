@@ -7,7 +7,7 @@ docker network create jenkins || :
 
 cd ../JenkinsContainer
 
-bash -i build-jenkins.sh
-bash -i run-jenkins.sh
+source build-jenkins.sh
+source  run-jenkins.sh
 
 docker container exec -it jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
