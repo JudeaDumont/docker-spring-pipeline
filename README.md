@@ -19,4 +19,8 @@ SetupMySystem: Used by jenkins internally to run things, can also be used to set
 Note that PATH in the jenkins container is: PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Is there a bash in there that uses a bashrc that is outside the global profile?
 
-to figure out what the new environment is, just run set!
+to figure out what the new environment is, just run set or alias.
+
+I remember python environments being painful as well.
+
+    
