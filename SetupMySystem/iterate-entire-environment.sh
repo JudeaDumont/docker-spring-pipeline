@@ -1,5 +1,7 @@
 #!/bin/bash
-alias
+for key in "${!BASH_ALIASES[@]}"; do
+    printf '%s=%q\n' "$key" "${BASH_ALIASES[$key]}"
+done
 set
 set -e
 ./DockerCommands/stop-all-business-containers.sh || :
