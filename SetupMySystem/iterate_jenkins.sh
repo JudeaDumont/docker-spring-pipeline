@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 docker stop jenkins-blueocean || :
 docker image pull docker:dind

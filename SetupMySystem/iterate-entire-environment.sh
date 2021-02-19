@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 ./DockerCommands/stop-all-business-containers.sh || :
 
