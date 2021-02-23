@@ -17,5 +17,6 @@ gcloud compute zones list
 
 gcloud config set compute/zone us-east1-b
 
-gcloud container clusters create hello-cluster
+#you have to do this before you run kubectl or it will think you are an anonymous user
+gcloud container clusters create rest-cluster
 

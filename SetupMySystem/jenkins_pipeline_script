@@ -1,0 +1,17 @@
+node {
+    stage('Checkout') {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/JudeaDumont/docker-spring-pipeline.git']]])
+
+    }
+
+    stage('Build System') {
+        sh '''#!/bin/bash
+            shopt -s expand_aliases
+            source /etc/bash.bashrc
+            alias gsed=sed
+            pwd
+            cd SetupMySystem/
+            source iterate-entire-environment.sh
+            '''
+    }
+}

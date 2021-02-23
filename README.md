@@ -38,3 +38,5 @@ This seems really dumb because the bash code must be sourced if it uses any comm
 (say if mac uses a different command than linux)
 
 There must be a better way and I'm not thinking it's python.
+
+You have to push the images to the google cloud repository to run the images in google cloud.

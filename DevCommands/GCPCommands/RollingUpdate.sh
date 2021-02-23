@@ -6,3 +6,5 @@ docker push gcr.io/nice-virtue-305620/hello-app:v3
 kubectl set image deployment/hello-app hello-app=gcr.io/nice-virtue-305620/hello-app:v3
 
 watch kubectl get pods
+
+# wget -O - http://34.75.37.66:8000
