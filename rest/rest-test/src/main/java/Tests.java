@@ -11,7 +11,7 @@ public class Tests {
     @Test
     public void testGet() {
 
-        String address = "http://simplerestcontroller:8000";
+        String address = "http://rest-deployment-service:8000";
 
         RestTemplate restTemplate = new RestTemplate();
         Map<String, String> vars = new HashMap<String, String>();
@@ -22,7 +22,7 @@ public class Tests {
     @Test
     public void testGet2() {
 
-        String address = "http://simplerestcontroller:8000";
+        String address = "http://rest-deployment-service:8000";
 
         RestTemplate restTemplate = new RestTemplate();
         Map<String, String> vars = new HashMap<String, String>();

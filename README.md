@@ -40,3 +40,7 @@ This seems really dumb because the bash code must be sourced if it uses any comm
 There must be a better way and I'm not thinking it's python.
 
 You have to push the images to the google cloud repository to run the images in google cloud.
+
+The kubernetes cluster successfully runs the test, however
+1. it thinks it failed because the container just exits
+2. THE SERVICE NAME IN THE DOCKER COMPOSE AND THE EXPOSED SERVICE IN K8S MUST BE NAMED THE SAME

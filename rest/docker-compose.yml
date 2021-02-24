@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  simplerestcontroller:
+  rest-deployment-service:
     build: ""
     image: simplerestcontroller
     ports:

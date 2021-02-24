@@ -8,8 +8,19 @@ kubectl get pods
 kubectl expose deployment rest-deployment --name=rest-deployment-service --type=LoadBalancer --port 8000 --target-port 8000
 
 kubectl get service
+kubectl get pods
 
 #run an image on a cluster
-kubectl run rest-deployment --image=gcr.io/nice-virtue-305620/simplerestcontrollertest:latest
+kubectl run rest --image=gcr.io/nice-virtue-305620/simplerestcontrollertest:latest
 
 kubectl exec --stdin --tty rest-deployment-7b7ff88586-dh8tq -- /bin/ash
+
+#talk to DNSCore?
+kubectl run curl --image=radial/busyboxplus:curl -i --tty
+
+#get a hosts IP
+nslookup rest-deployment-service
+
+kubectl get service/rest-deployment-service -o jsonpath='{.spec.clusterIP}'
+
+kubectl delete pods rest-deployment
