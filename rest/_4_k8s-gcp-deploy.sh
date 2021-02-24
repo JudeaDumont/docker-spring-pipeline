@@ -23,3 +23,5 @@ kubectl run rest --image=gcr.io/nice-virtue-305620/simplerestcontrollertest:late
 #kubectl get service/rest-deployment-service -o jsonpath='{.spec.clusterIP}'
 
 #kubectl delete pods rest-deployment
+
+
