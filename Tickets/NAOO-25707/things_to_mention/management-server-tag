@@ -1,0 +1,15 @@
+management:
+  server:
+    add-application-context-header: false
+
+I did not change this server tag as it looks to be in a different context!
+
+That being said just pushing the changes to the root level server tags has the advantage of probably
+not breaking anything, and if need be it can be added here and then checked for validity separately
+
+Problem is i am not sure what that management tag is doing or if it is a separate server attirbute
+I imagine it probably is.
+
+Affected services:
+inventory-service
+mygfs-customer-service

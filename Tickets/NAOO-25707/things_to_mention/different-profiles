@@ -1,0 +1,7 @@
+the idea behind includeing the application display name under every instance of the server attribute
+in the application.yaml file is that under every spring profile you will still want the
+application-display-name in dynatrace
+
+what are the three separate dashes in an application.yaml file?
+
+The profiles do cascade and spring will in fact override only the most specific properties

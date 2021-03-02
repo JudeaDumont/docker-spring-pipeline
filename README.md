@@ -52,8 +52,19 @@ The above is fixed by visiting this page https://console.cloud.google.com/apis/c
 
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/judeadumont/Desktop/terraform-gke-5ae77d533de6.json"
 
-gcloud auth login dumontjudea2@gmail.com fixes:
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/judeadumont/Desktop/terraform-gke-5ae77d533de6.json"
+gcloud auth login dumontjudea2@gmail.com
+fixes:
 ERROR: (gcloud.services.enable) PERMISSION_DENIED: The caller does not have permission
 ERROR: (gcloud.container.clusters.get-credentials) ResponseError: code=403, message=Required "container.clusters.get" permission(s) for "projects/terraform-gke-0/locations/us-central1/clusters/terraform-gke-0-gke".
 
 might be a good idea to write bash scripts that successfully change the gcloud login, jeezus
+
+if the server attributes get blown away for a different profile under server then we have issues with graceful shutdown, and those need to be defined again in the profile.
+if we dont see the dynatrace names it could be that the property got blown away in the configuration
+
+@ConfigurationProperties(prefix = "naoo.gcd")
+this might not get the proper enclosing of the configurations
+This annotation pulls from an application.yaml into pojo vars.
+
+Need to revisit the one for mygfs customer load service.

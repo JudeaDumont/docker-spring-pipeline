@@ -1,0 +1,8 @@
+ssh://git@bitbucket.gfs.com/naoo/apache-config.git
+ssh://git@bitbucket.gfs.com/naoo/cart-service.git
+ssh://git@bitbucket.gfs.com/naoo/customer-load-service.git
+ssh://git@bitbucket.gfs.com/naoo/customer-mygfs-load-service.git
+ssh://git@bitbucket.gfs.com/naoo/customer-service.git
+ssh://git@bitbucket.gfs.com/naoo/deliveryschedule-service.git
+ssh://git@bitbucket.gfs.com/naoo/inventory-service.git
+ssh://git@bitbucket.gfs.com/naoo/inventory-service.git

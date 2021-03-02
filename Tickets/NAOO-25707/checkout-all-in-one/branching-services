@@ -1,0 +1,5 @@
+Idea:
+Shell script that takes a cluster-name/id and a ticket number:
+
+grabs each workload from the cluster
+checks out each workload and creates a new branch named with the ticket number/description

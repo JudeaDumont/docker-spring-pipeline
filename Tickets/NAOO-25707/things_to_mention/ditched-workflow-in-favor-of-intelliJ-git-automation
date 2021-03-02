@@ -1,0 +1,7 @@
+see checkout all in one
+
+The reason why this is an effective method is because I can
+1. do the checkout all at once.
+2. you can look at the files all in the same ide
+3. you can check and see what services actually need to be changed before creating a branch
+4. intelliJ handles all the git doodoo

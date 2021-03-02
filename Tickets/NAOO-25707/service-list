@@ -1,0 +1,30 @@
+customer-mygfs-index-service/application.yml                 :		In Transit (building)
+kube-downscaler/application.yml	                            :		N/A
+material-mygfs-index-service/application.yml	                :		In Transit (building)
+apache-config/application.yml	                              :		N/A
+cart-service/application.yml	                                :		Built by jenkins
+customer-load-service/application.yml	                      :		Built by jenkins
+customer-mygfs-load-service/application.yml	                :		Built by jenkins
+customer-service/application.yml	                            :		Built by jenkins
+deliveryschedule-service/application.yml	 	                  :		Already Done
+inventory-service/application.yml	 	                        :		Built by jenkins
+it-support/application.yml	 	                                :		N/A (No Repo?)
+kibana-config/application.yml	 	                            :		N/A
+list-service/application.yml	 	                              :		In Transit (management)
+material-mygfs-load-service/application.yml	 	              :   In Transit
+message-service/application.yml	 	                          :   In Transit
+order-api-gateway/application.yml	 	                        :   In Transit (management, peculiar server tags)
+order-guide-load-service/application.yml	 	                  :In Transit
+order-guide-mygfs-load-service/application.yml	 	            :In Transit
+order-service/application.yml	 	                            :In Transit (management)
+organization-service/application.yml	 	                      :In Transit
+price-service/application.yml	 	                            :In Transit (management)
+product-load-service/application.yml	 	                      :In Transit
+product-service/application.yml	 	                          :In Transit (management)
+punchout-service/application.yml	 	                          :In Transit
+search-config/application.yml	 	                            : N/A
+user-service/application.yml	 	                              :In Transit (pretty gnarly)
+web-bff/application.yml	 	                                  :In Transit (management)
+web/application.yml	 	                                      :In Transit (management)
+wiremock-config/application.yml	 	                          :N/A
+order-guide-mygfs-index-service/application.yml	 	          :In Transit
